@@ -1,37 +1,85 @@
 *{
     margin: 0;
 }
+:root{
+    --text-color: #FFFFFF;
+    --form-button-bg: #272b2f;
+    --fb-btn-color: #1874eb;
+    --placeholder-text-color: 
+    #b6b9bb;
+    --google-btn-color: #db4437;
+    --twitter-btn-color: #00acee;
 
+}
 body{
-    background-image: url(/FORM/image/login-bg-3.jpeg);
+    background-image: url(image/login-bg-3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
+    width: 100vw;
+    height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    
 }  
  body::after{
-    content: " jkvjlvll hlblb h";
+    content: " ";
     width: 100vw;
     height: 100%;
-    background-color: black;
-    position: absolute;
-    opacity: 0.4;
+    background-color:rgba(0, 0, 0, 0.26);
+    position: absolute;    
+     
+}
+
+.form-hold{
+    width: 90%;
+    height: 500px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .right-form{
-    width: 40%;
-    height: 70%;
+    width: 500px;
+    height: 70vh;
     display: flex;
-    padding: 40px;
+    /* padding: 100px; */
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+   
 }
-
-
-.right-form img{
+.form-right .logo{
     width: 200px;
-    height: 100px; 
-    object-fit: cover;   
+    height: 60px;
+    
 }
+.logo img{
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+
+
+}    
+
+.right-form p{
+    color: var(--text-color);
+    font-size: 18pt;
+}
+.right-form h2{
+    color: var(--text-color);
+    font-size: 25pt;
+    text-align: center;
+}
+.right-form a{
+    color: var(--text-color);
+    font-size: 15pt;
+}
+
+/* left section of the form */
