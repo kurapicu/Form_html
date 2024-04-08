@@ -22,6 +22,7 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+      background-position: top center;
    
 }  
  body::after{
@@ -83,3 +84,53 @@ body{
 }
 
 /* left section of the form */
+.left-form{
+    background: var(--text-color);
+    width: 650px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    width: 550px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.form-wrapper form{
+    width: 520px;
+    
+     
+    
+}
+.form-wrapper form label{
+
+   
+    
+}
+.form-wrapper form input{
+    width: 100%; 
+    height: 50px;  
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    border: 1px solid var(--placeholder-text-color);   
+}
+
+.form-wrapper form input::placeholder{
+    color: var(--placeholder-text-color);
+    font-size: 12pt;
+    padding: 0px 10px;
+}
+.form-wrapper form button{
+    width: 100%;
+    height: 50px;
+  
+     
+}
+
