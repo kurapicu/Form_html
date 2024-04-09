@@ -126,6 +126,7 @@ body{
     font-size: 12pt;
     padding: 0px 10px;
 }
+/* create account button */
 .form-wrapper button{
     width: 95%;
     height: 50px;
@@ -136,16 +137,17 @@ body{
     border: none;
      
 }
+/* write up section */
 .form-wrapper p{
     color: var(--gray-text-color);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .form-wrapper p span{
     color: var(--fb-btn-color);
     text-decoration: underline;
 }
-
+/* Line section  */
 .create-line{
     display: flex;
     justify-content: center;
@@ -160,6 +162,7 @@ body{
     width: 200px;
 }
 
+/* social button section */
 .button-hold{
     display: flex;
     justify-content: center;
@@ -201,6 +204,7 @@ body{
 
 .facebook span{
     color: var(--fb-btn-color);
+    font-weight: 300;
 }
 .google span{
     color: var(--google-btn-color);
@@ -208,3 +212,18 @@ body{
 .twitter span{
     color: var(--twitter-btn-color);
 }
+
+/* buttons hover  for facebook*/
+.facebook:hover{
+    border-color: var(--fb-btn-color);
+    background: var(--fb-btn-color);
+    transition: 250ms;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.facebook:hover .fa-facebook-f, 
+.facebook:hover span{
+    color: var(--text-color);
+}
+
+
