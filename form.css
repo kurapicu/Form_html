@@ -9,6 +9,7 @@
     #b6b9bb;
     --google-btn-color: #db4437;
     --twitter-btn-color: #00acee;
+    --gray-text-color: #6c6f71;
 
 }
 body{
@@ -105,9 +106,7 @@ body{
 
 .form-wrapper form{
     width: 520px;
-    
-     
-    
+        
 }
 .form-wrapper form label{
 
@@ -127,10 +126,62 @@ body{
     font-size: 12pt;
     padding: 0px 10px;
 }
-.form-wrapper form button{
-    width: 100%;
+.form-wrapper button{
+    width: 95%;
     height: 50px;
-  
+    background: var(--form-button-bg);
+    color: var(--text-color);
+    font-size: 14pt;
+    box-shadow: 0px 9px 26px 3px rgba(0,0,0,0.1);
+    border: none;
      
 }
+.form-wrapper p{
+    color: var(--gray-text-color);
+    text-align: center;
+    margin-top: 20px;
+}
+.form-wrapper p span{
+    color: var(--fb-btn-color);
+    text-decoration: underline;
+}
 
+.create-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    margin-top: 20px;
+}
+
+.line{
+    border-top: 1px solid var(--placeholder-text-color);
+    width: 200px;
+}
+
+.button-hold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 10px 60px;
+    border: 2px solid;
+    background: var(--text-color);
+    
+}
+
+.facebook{
+    border-color: var(--fb-btn-color);
+}
+.google{
+    border-color: var(--google-btn-color);
+}
+.twitter{
+    border-color: var(--twitter-btn-color);
+}
