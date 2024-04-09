@@ -226,4 +226,16 @@ body{
     color: var(--text-color);
 }
 
+/* buttons hover  for google*/
+.google:hover{
+    border-color: var(--google-btn-color);
+    background: var(--google-btn-color);
+    transition: 250ms;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.google:hover .fa-google, 
+.google:hover span{
+    color: var(--text-color);
+}
 
