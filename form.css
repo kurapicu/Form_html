@@ -170,18 +170,41 @@ body{
 }
 
 .btn{
-    padding: 10px 60px;
+    padding: 10px 45px;
     border: 2px solid;
     background: var(--text-color);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .facebook{
     border-color: var(--fb-btn-color);
 }
+ 
 .google{
     border-color: var(--google-btn-color);
 }
 .twitter{
     border-color: var(--twitter-btn-color);
+}
+.fa-facebook-f{
+    color: var(--fb-btn-color);
+}
+.fa-google{
+    color: var(--google-btn-color);
+}
+.fa-twitter{
+    color: var(--twitter-btn-color);
+}
+
+.facebook span{
+    color: var(--fb-btn-color);
+}
+.google span{
+    color: var(--google-btn-color);
+}
+.twitter span{
+    color: var(--twitter-btn-color);
 }
