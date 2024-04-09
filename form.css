@@ -239,3 +239,16 @@ body{
     color: var(--text-color);
 }
 
+/* buttons hover  for twitter*/
+.twitter:hover{
+    border-color: var(--twitter-btn-color);
+    background: var(--twitter-btn-color);
+    transition: 250ms;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.twitter:hover .fa-twitter, 
+.twitter:hover span{
+    color: var(--text-color);
+}
+
