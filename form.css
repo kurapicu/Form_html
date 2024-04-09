@@ -4,6 +4,7 @@
 :root{
     --text-color: #FFFFFF;
     --form-button-bg: #272b2f;
+    --form-button-bg-hover: #272b2fe7;
     --fb-btn-color: #1874eb;
     --placeholder-text-color: 
     #b6b9bb;
@@ -133,10 +134,21 @@ body{
     background: var(--form-button-bg);
     color: var(--text-color);
     font-size: 14pt;
-    box-shadow: 0px 9px 26px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     border: none;
-     
+    transition-duration: 0.7s;
+    cursor: pointer;    
 }
+
+/*   account button hover */
+.form-wrapper button:hover{
+    background: var(--form-button-bg-hover);    
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    border: none;
+         
+}
+
+
 /* write up section */
 .form-wrapper p{
     color: var(--gray-text-color);
@@ -184,13 +196,16 @@ body{
 
 .facebook{
     border-color: var(--fb-btn-color);
+    transition-duration: 0.5s;
 }
  
 .google{
     border-color: var(--google-btn-color);
+    transition-duration: 0.5s;
 }
 .twitter{
     border-color: var(--twitter-btn-color);
+    transition-duration: 0.8s;
 }
 .fa-facebook-f{
     color: var(--fb-btn-color);
