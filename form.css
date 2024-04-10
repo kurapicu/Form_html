@@ -329,3 +329,46 @@ body{
     gap: 10px;
 }
 }
+
+/* MEDIA QUERY FOR TABLET LANDSCAPE RESPONSIVENESS */
+
+@media screen and (orientation: landscape) {
+    .form-hold{
+        gap: 60px;
+
+    }
+
+    .left-form{        
+        width: 500px;
+        height: 97vh;
+    }
+    .form-wrapper{
+        width: 400px;
+        height: 100vh;
+        row-gap: 5px;      
+                
+    }
+    .form-wrapper form{
+        width: 395px;
+            
+    }
+    .form-wrapper button{        
+        height: 55px;
+        width: 100%;
+        margin-left: 5px;            
+    }
+    .form-wrapper p{
+       font-size: 10pt; 
+    }
+    .create-with{
+        font-size: 10pt;
+    }
+    .line{
+        width: 120px;
+    }
+    
+.btn{
+    padding: 10px 28px;    
+    gap: 10px;
+}
+}
