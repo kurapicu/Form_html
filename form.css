@@ -29,6 +29,8 @@ body{
       background-position: center;
    
 }  
+
+ 
  body::after{
     content: " ";
     width: 100vw;
@@ -45,7 +47,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
 }
 
 .right-form{
@@ -85,6 +87,9 @@ body{
 .right-form a{
     color: var(--text-color);
     font-size: 15pt;
+}
+.right-form a:hover{
+    color: var(--fb-btn-color);    
 }
 
 /* left section of the form */
@@ -269,3 +274,58 @@ body{
     color: var(--text-color);
 }
 
+/* MEDIA QUERY FOR TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+    .form-hold{
+        gap: 30px;
+
+    }
+
+    .right-form{
+        width: 300px;
+    }
+    .right-form p{
+        font-size: 16pt;
+        text-align: center;
+    }
+    .right-form h2{    
+        font-size: 22pt;        
+    }
+    .right-form a{
+         
+        font-size: 13pt;
+    }
+    .left-form{        
+        width: 500px;
+        min-height: 40vh;
+    }
+    .form-wrapper{
+        width: 400px;
+        row-gap: 8px;      
+                
+    }
+    .form-wrapper form{
+        width: 395px;
+            
+    }
+    .form-wrapper button{        
+        height: 55px;
+        width: 100%;
+        margin-left: 5px;            
+    }
+    .form-wrapper p{
+       font-size: 10pt; 
+    }
+    .create-with{
+        font-size: 10pt;
+    }
+    .line{
+        width: 120px;
+    }
+    
+.btn{
+    padding: 10px 28px;    
+    gap: 10px;
+}
+}
