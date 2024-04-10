@@ -21,21 +21,23 @@ body{
     background-size: cover;
     position: relative;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background-position: center;
-   
+      background-attachment: fixed;
+      overflow:auto;
+         
 }  
 
  
  body::after{
     content: " ";
     width: 100vw;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.301);
+    min-height: 100%;
+    background-color:rgba(0, 0, 0, 0.336);
     position: absolute;    
      
 }
@@ -47,7 +49,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 150px;   ;
 }
 
 .right-form{
@@ -96,7 +98,7 @@ body{
 .left-form{
     background: var(--text-color);
     width: 650px;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +106,7 @@ body{
 
 .form-wrapper{
     width: 550px;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,6 +116,7 @@ body{
 
 .form-wrapper form{
     width: 520px;
+    
         
 }
 .form-wrapper form label{
@@ -306,12 +309,12 @@ body{
                 
     }
     .form-wrapper form{
-        width: 395px;
+        width: 380px;
             
     }
     .form-wrapper button{        
         height: 55px;
-        width: 100%;
+        width: 96%;
         margin-left: 5px;            
     }
     .form-wrapper p{
@@ -325,8 +328,8 @@ body{
     }
     
 .btn{
-    padding: 10px 28px;    
-    gap: 10px;
+    padding: 9px 19px;    
+    gap: 9px;
 }
 }
 
@@ -371,4 +374,48 @@ body{
     padding: 10px 28px;    
     gap: 10px;
 }
+}
+
+/* MEDIA QUERY FOR TABLET RESPONSIVENESS */
+@media screen and (max-width: 500px) {
+   
+    .form-hold{
+        flex-wrap: wrap;
+        gap: none;
+        margin-bottom: 50px;
+        
+    }   
+    .right-form{
+        width: 99%;
+        height: 100vh ;
+    }   
+    .left-form{
+        width: 98%;        
+        padding: 10% 0%;        
+    } 
+    .form-wrapper{
+        width: calc(98% - 30px);
+      
+    }
+    .form-wrapper form{
+        width: 93%;
+    }
+    .form-wrapper form button{
+        width: 100%;         
+    }
+    .line{
+        width: 90px;
+    }
+    .button-hold{
+        /* flex-wrap: wrap; */
+        gap: 3px;
+    }
+    .btn{
+        padding: 4px 8px;
+    }
+  
+
+
+
+
 }
